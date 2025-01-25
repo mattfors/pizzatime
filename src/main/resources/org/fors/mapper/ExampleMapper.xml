@@ -10,4 +10,8 @@
     <select id="selectVersion" resultClass="string">
         SELECT VERSION()
     </select>
+
+    <select id="selectSchemas" resultClass="java.lang.String">
+        SHOW DATABASES
+    </select>
 </sqlMap>
