@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/org/fors/MySQLTest.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/org/fors/mapper/ExampleMapper.xml" dialect="MySQL" />
+  </component>
+</project>
