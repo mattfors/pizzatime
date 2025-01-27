@@ -14,4 +14,18 @@
     <select id="selectSchemas" resultClass="java.lang.String">
         SHOW DATABASES
     </select>
+
+    <select id="selectTables" resultClass="java.lang.String">
+        SHOW TABLES
+    </select>
+
+    <select id="selectTablesAndColumns" resultClass="java.util.HashMap">
+        SELECT
+            TABLE_NAME,
+            COLUMN_NAME
+        FROM
+            INFORMATION_SCHEMA.COLUMNS
+        WHERE
+            TABLE_SCHEMA = DATABASE()
+    </select>
 </sqlMap>

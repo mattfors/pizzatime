@@ -2,6 +2,9 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/src/main/java/org/fors/MySQLTest.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/migrations/Product_v1.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/main/resources/org/fors/mapper/ExampleMapper.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/org/fors/mapper/MigrationMapper.xml" dialect="GenericSQL" />
+    <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>

@@ -13,4 +13,5 @@
         </dataSource>
     </transactionManager>
     <sqlMap resource="org/fors/mapper/ExampleMapper.xml"/>
+    <sqlMap resource="org/fors/mapper/MigrationMapper.xml"/>
 </sqlMapConfig>

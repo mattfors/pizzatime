@@ -5,6 +5,10 @@
 
     <display-name>pizzatime</display-name>
 
+    <listener>
+        <listener-class>org.fors.MigrationListener</listener-class>
+    </listener>
+
     <servlet>
         <servlet-name>MainServlet</servlet-name>
         <servlet-class>org.fors.MainServlet</servlet-class>

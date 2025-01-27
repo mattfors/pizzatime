@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap
+        PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="MigrationMapper">
+    <update id="createMigrationLogTable">
+        CREATE TABLE IF NOT EXISTS migration_log (
+                                                     id INT AUTO_INCREMENT PRIMARY KEY,
+                                                     file_name VARCHAR(255) NOT NULL,
+            executed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
+    </update>
+
+    <select id="checkLog" parameterClass="string" resultClass="string">
+        SELECT file_name FROM migration_log WHERE file_name = #value#
+    </select>
+
+    <update id="executeSql" parameterClass="string">
+        $value$
+    </update>
+
+    <insert id="insertLog" parameterClass="string">
+        INSERT INTO migration_log (file_name) VALUES (#value#)
+    </insert>
+</sqlMap>
